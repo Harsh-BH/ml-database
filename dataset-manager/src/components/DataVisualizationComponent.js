@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import {
-  LineChart,
-  Line,
-  CartesianGrid,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-} from "recharts";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 const DataVisualizationComponent = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:5000/datasets");
+      const res = await axios.get('http://localhost:5000/datasets');
       setData(res.data);
     };
     fetchData();

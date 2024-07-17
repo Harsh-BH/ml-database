@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import UploadComponent from "./components/UploadComponent";
-import DataVisualizationComponent from "./components/DataVisualizationComponent";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import UploadComponent from './components/UploadComponent';
+import DataVisualizationComponent from './components/DataVisualizationComponent';
+import './App.css';
 
 const App = () => {
   return (
